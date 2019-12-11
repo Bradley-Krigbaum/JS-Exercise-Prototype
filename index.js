@@ -87,8 +87,8 @@ function Car(model, milesPerGallon) {
     this.maxDistance = distance;
     this.odometer += this.maxDistance;
     this.tank -= (this.maxDistance / 20);
-    if(this.tank === 0){
-      return 'Not Enough Fuel';
+    if(this.tank == 0){
+      return `I ran out of fuel at ${this.odometer} miles!`;
     }
   }
 
